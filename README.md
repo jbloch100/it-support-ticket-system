@@ -2,6 +2,10 @@
 
 A web application for creating, managing, and tracking IT support tickets.
 
+## Live Demo
+
+[Try the IT Support Ticket System](https://it-support-ticket-system-theta.vercel.app/)
+
 ## Technologies Used
 
 - React
