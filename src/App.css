@@ -1,0 +1,256 @@
+.app {
+  width: min(100% - 32px, 1000px);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.ticket-form {
+  background-color: white;
+  padding: 24px;
+  margin: 32px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ticket-form input,
+.ticket-form textarea,
+.ticket-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.ticket-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.create-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #1d4ed8;
+}
+
+.ticket-card {
+  background-color: white;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.ticket-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.status-button,
+.delete-button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.status-button {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  margin-right: 8px;
+}
+
+.status-button:hover {
+  background-color: #d1d5db;
+}
+
+.delete-button {
+  background-color: #dc2626;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-open {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-closed {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.priority-high {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.priority-medium {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.priority-low {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.app-header {
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.app-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.summary-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.summary-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.summary-card p {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.ticket-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ticket-actions .status-button {
+  margin-right: 0;
+}
+
+.search-box {
+  margin: 24px 0 16px;
+}
+
+.search-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.clear-search-button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.clear-search-button:hover {
+  background-color: #d1d5db;
+}
+
+.reset-filters-button {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.reset-filters-button:hover {
+  background-color: #d1d5db;
+}
+
+.editing-message {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.results-count {
+  margin: 20px 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.ticket-id {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.character-count {
+  margin-top: -8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.character-warning {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+}
